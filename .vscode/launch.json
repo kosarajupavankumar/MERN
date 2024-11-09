@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Ecommerce Controller",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/Module-3/Ecommerce/src/controllers/user.controller.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "3000"
+      },
+      "console": "integratedTerminal",
+      "runtimeArgs": ["--nolazy"],
+      "sourceMaps": true
+    }
+  ]
+}
