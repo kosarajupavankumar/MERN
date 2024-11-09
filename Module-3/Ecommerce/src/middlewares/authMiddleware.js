@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 import userModel from "../models/user.model.js";
 
 export const verifyToken = async (req, res, next) => {
+  console.log(`inside verifyToken`);
   const authHeader = req.headers["x-access-token"];
 
   if (!authHeader) {
